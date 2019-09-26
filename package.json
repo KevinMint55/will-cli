@@ -1,6 +1,6 @@
 {
   "name": "vue-willcli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Custom Tooling for Vue.js Development",
   "bin": {
     "will": "./bin/index.js"
@@ -8,11 +8,14 @@
   "author": "KevinMint",
   "devDependencies": {
     "babel-eslint": "^10.0.3",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  },
+  "dependencies": {
     "chalk": "^2.4.2",
     "commander": "^3.0.1",
     "download-git-repo": "^2.0.0",
-    "eslint": "^6.4.0",
-    "eslint-config-airbnb-base": "^14.0.0",
     "handlebars": "^4.3.1",
     "inquirer": "^7.0.0",
     "log-symbols": "^3.0.0",

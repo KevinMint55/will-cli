@@ -16,14 +16,14 @@ program
   .action((name) => {
     if (!fs.existsSync(name)) {
       inquirer.prompt([{
-          name: 'description',
-          message: '请输入项目描述',
-        },
+        name: 'description',
+        message: '请输入项目描述',
+      },
       ]).then((answers) => {
         const spinner = ora('正在下载模板...');
         spinner.start();
         download('direct:https://github.com/KevinMint55/vue-willtemplate.git#master', name, {
-          clone: true
+          clone: true,
         }, (err) => {
           if (err) {
             spinner.fail();
@@ -34,7 +34,7 @@ program
             const meta = {
               name,
               description: answers.description,
-            }
+            };
             if (fs.existsSync(fileName)) {
               const content = fs.readFileSync(fileName).toString();
               const result = handlebars.compile(content)(meta);
@@ -42,8 +42,8 @@ program
             }
             console.log(symbols.success, chalk.green('项目初始化完成'));
           }
-        })
-      })
+        });
+      });
     } else {
       console.log(symbols.error, chalk.red('项目已存在'));
     }
