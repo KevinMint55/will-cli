@@ -9,20 +9,43 @@ const ora = require('ora');
 const chalk = require('chalk');
 const symbols = require('log-symbols');
 
+const templateList = [
+  {
+    name: 'vue',
+    branch: 'master',
+  },
+  {
+    name: 'react',
+    branch: 'react',
+  },
+];
+
 program
   .version('1.0.0')
   .usage('will <command> [options]')
   .command('init <name>')
   .action((name) => {
     if (!fs.existsSync(name)) {
-      inquirer.prompt([{
-        name: 'description',
-        message: '请输入项目描述',
-      },
-      ]).then((answers) => {
+      inquirer.prompt(
+        [
+          {
+            name: 'description',
+            message: '请输入项目描述',
+            type: 'input',
+            default: name,
+          },
+          {
+            type: 'list',
+            name: 'template',
+            message: '请选择项目模版:',
+            choices: templateList,
+          },
+        ],
+      ).then((answers) => {
+        const template = templateList.find((item) => item.name === answers.template);
         const spinner = ora('正在下载模板...');
         spinner.start();
-        download('direct:https://github.com/KevinMint55/will-template.git#master', name, {
+        download(`direct:https://github.com/KevinMint55/will-template.git#${template.branch}`, name, {
           clone: true,
         }, (err) => {
           if (err) {

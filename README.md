@@ -4,8 +4,13 @@
 npm install will-cli -g
 ```
 
-### 运行以下命令来创建一个新项目
+### To create a new project, run:
 
 ```
 will init hello-world
 ```
+
+### template list
+
+- vue
+- react
