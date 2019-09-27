@@ -22,7 +22,7 @@ program
       ]).then((answers) => {
         const spinner = ora('正在下载模板...');
         spinner.start();
-        download('direct:https://github.com/KevinMint55/vue-willtemplate.git#master', name, {
+        download('direct:https://github.com/KevinMint55/will-template.git#master', name, {
           clone: true,
         }, (err) => {
           if (err) {
