@@ -18,6 +18,10 @@ const templateList = [
     name: 'react',
     branch: 'react',
   },
+  {
+    name: 'koa',
+    branch: 'koa',
+  },
 ];
 
 program

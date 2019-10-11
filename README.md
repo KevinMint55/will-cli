@@ -10,7 +10,8 @@ npm install will-cli -g
 will init hello-world
 ```
 
-### template list
+### List of supported templates
 
 - vue
 - react
+- koa
