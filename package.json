@@ -5,7 +5,22 @@
   "bin": {
     "will": "./bin/index.js"
   },
-  "author": "KevinMint",
+  "author": {
+    "name": "KevinMint",
+    "email": "innovation55@foxmail.com",
+    "url": "https://www.kevinmint.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KevinMint55/will-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "vue",
+    "react",
+    "koa"
+  ],
   "devDependencies": {
     "babel-eslint": "^10.0.3",
     "eslint": "^6.4.0",
