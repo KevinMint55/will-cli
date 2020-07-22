@@ -12,18 +12,18 @@ const symbols = require('log-symbols');
 const templateList = [
   {
     name: 'vue',
-    git: 'https://github.com/KevinMint55/will-template.git',
-    branch: 'master',
+    git: 'https://github.com/KevinMint55/vue-willtemplate.git',
+    branch: 'template',
   },
   {
     name: 'react',
     git: 'https://github.com/KevinMint55/react-willtemplate.git',
-    branch: 'master',
+    branch: 'template',
   },
   {
     name: 'koa',
     git: 'https://github.com/KevinMint55/koa-willtemplate.git',
-    branch: 'master',
+    branch: 'template',
   },
 ];
 
