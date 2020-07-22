@@ -12,15 +12,18 @@ const symbols = require('log-symbols');
 const templateList = [
   {
     name: 'vue',
+    git: 'https://github.com/KevinMint55/will-template.git',
     branch: 'master',
   },
   {
     name: 'react',
-    branch: 'react',
+    git: 'https://github.com/KevinMint55/react-willtemplate.git',
+    branch: 'master',
   },
   {
     name: 'koa',
-    branch: 'koa',
+    git: 'https://github.com/KevinMint55/koa-willtemplate.git',
+    branch: 'master',
   },
 ];
 
@@ -49,7 +52,7 @@ program
         const template = templateList.find((item) => item.name === answers.template);
         const spinner = ora('正在下载模板...');
         spinner.start();
-        download(`direct:https://github.com/KevinMint55/will-template.git#${template.branch}`, name, {
+        download(`direct:${template.git}#${template.branch}`, name, {
           clone: true,
         }, (err) => {
           if (err) {
