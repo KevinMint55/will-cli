@@ -1,0 +1,20 @@
+[
+  {
+    "name": "vue",
+    "description": "Vue.js 前端模板",
+    "git": "https://github.com/KevinMint55/vue-willtemplate.git",
+    "branch": "template"
+  },
+  {
+    "name": "react",
+    "description": "React 前端模板",
+    "git": "https://github.com/KevinMint55/react-willtemplate.git",
+    "branch": "template"
+  },
+  {
+    "name": "koa",
+    "description": "Koa Node.js 服务端模板",
+    "git": "https://github.com/KevinMint55/koa-willtemplate.git",
+    "branch": "template"
+  }
+]

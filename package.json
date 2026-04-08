@@ -1,9 +1,13 @@
 {
   "name": "will-cli",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "Custom Tooling for Web Development",
+  "type": "module",
+  "engines": {
+    "node": ">=18.18.0"
+  },
   "bin": {
-    "will": "./bin/index.js"
+    "will": "bin/index.js"
   },
   "author": {
     "name": "WillWu",
@@ -13,7 +17,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/KevinMint55/will-cli.git"
+    "url": "git+https://github.com/KevinMint55/will-cli.git"
   },
   "keywords": [
     "cli",
@@ -28,12 +32,12 @@
     "eslint-plugin-import": "^2.18.2"
   },
   "dependencies": {
-    "chalk": "^2.4.2",
-    "commander": "^3.0.2",
-    "download-git-repo": "^2.0.0",
-    "handlebars": "^4.3.2",
-    "inquirer": "^7.0.0",
-    "log-symbols": "^3.0.0",
-    "ora": "^4.0.1"
+    "chalk": "^5.6.2",
+    "commander": "^13.1.0",
+    "download-git-repo": "^3.0.2",
+    "handlebars": "^4.7.9",
+    "inquirer": "^12.11.1",
+    "log-symbols": "^7.0.1",
+    "ora": "^8.2.0"
   }
 }
